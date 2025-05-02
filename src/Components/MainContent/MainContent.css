@@ -1,6 +1,7 @@
 img{
     width: 10em;
     height: 10em;
+    margin-bottom: 20px;
 }
 
 .fanimage .tempbox{
@@ -60,3 +61,11 @@ to {
     margin: 20px;
 }
 
+.increase{
+   margin-right: 100px;
+}
+
+.decrease{
+    margin-left: 60px;
+    margin-right: 20px;
+}

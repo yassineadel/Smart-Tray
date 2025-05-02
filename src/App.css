@@ -1,6 +1,9 @@
 body {
   
-  background-color: #6EA1E4;
+  background-image: url('./assets/images/Project_Background.png'); /* relative to public/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   width: 100%;
