@@ -3,8 +3,6 @@ img{
     height: 10em;
 }
 
-
-
 .fanimage .tempbox{
     display: flex;
     align-items: center;
@@ -24,11 +22,11 @@ img{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 button{
-    background-color: #893BF6;
+  background-color: #893BF6;
   border: none;
   color: rgb(0, 0, 0);
   padding: 15px 32px;
@@ -44,38 +42,21 @@ button{
 button:active {
     box-shadow: 0 5px #ff0000;
     transform: translateY(4px);
-  }
+}
 
-
-  #rotatingfans{
-   animation: mymove 10s infinite;
+#rotatingfans{
+   animation: mymove 4s linear infinite;
    animation-delay: 0s;
-  }
+}
 
-  @keyframes mymove{from {
+@keyframes mymove{from {
     transform: rotate(0deg);
-  }
-  to {
+}
+to {
     transform: rotate(360deg);
-  }}
-  
+}}  
 
 .nextpage button{
     margin: 20px;
 }
-
-  /*@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}*/
 

@@ -3,14 +3,11 @@ import "./MainContent.css"
 import { useNavigate } from 'react-router-dom';
 import Fanblades from "../../assets/images/fan_picture-removebg-preview.png"
 
-
-
-
 function MainContent(){
    const navigate = useNavigate();
     return(
     <div className="fanimage">
-          <h1 style={{fontFamily:'josefin slab' , fontSize:'20px' , color:'white' }}>Refrigerator Temperature</h1>
+          <h1 style={{fontFamily:'josefin slab' , fontSize:'40px' ,  color:'white' , marginBottom:'40px' }}>Refrigerator Temperature</h1>
 
           <img id="rotatingfans" src={Fanblades}/>
 
