@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+
+.trayimage {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add this */
+}
+
+
+.trayimage img {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-height: 75vh;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}

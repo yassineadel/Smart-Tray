@@ -40,8 +40,13 @@ button{
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-button:active {
-    box-shadow: 0 5px #ff0000;
+.decrease:active{
+ box-shadow: 0 5px #001aff;
+    transform: translateY(4px);
+}
+
+.increase:active {
+    box-shadow: 0 5px hsl(0, 100%, 50%);
     transform: translateY(4px);
 }
 

@@ -5,6 +5,9 @@ import RefItems from './Components/RefItems/RefItems';
 import Header from './Components/Header/Header';
 import MainContent from './Components/MainContent/MainContent';
 import Footer from './Components/Footer/Footer';
+import { useEffect } from 'react';
+import axios from 'axios';
+
 
 function App() {
   return (
