@@ -20,8 +20,8 @@ function RefItems() {
   }, []);
 
   const items = Array.from({ length: itemCount }, (_, i) => (
-    <img key={i} src={redbullimage} alt="Item" className="tray-item" />
-  ));
+  <button key={i} className="tray-button" />
+));
 
   return (
     <div>

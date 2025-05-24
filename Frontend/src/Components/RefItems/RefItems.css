@@ -54,3 +54,24 @@ h1 {
   width: fit-content;
 }
 
+.tray-button {
+  flex: 0 1 calc(20% - 8px);
+  height: 100px;
+  width: 60px;
+  background-image: url('../../assets/images/redbullimage.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent; /* remove purple */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tray-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}

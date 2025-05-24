@@ -26,7 +26,7 @@ img{
     height: 80vh;
 }
 
-button{
+button {
   background-color: #893BF6;
   border: none;
   color: rgb(0, 0, 0);
@@ -37,7 +37,12 @@ button{
   margin: 10px;
   border-radius: 15px; 
   box-shadow: 0 5px #000000;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: background-color 0.4s ease, transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background-color: #FF5733; /* change to any color you like */
+  color: white;
+  transform: scale(1.05); /* slight zoom */
 }
 
 .decrease:active{
@@ -74,3 +79,15 @@ to {
     margin-left: 60px;
     margin-right: 20px;
 }
+
+controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button:hover {
+  background-color: #5a14e0;
+  color: white;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;}

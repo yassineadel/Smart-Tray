@@ -8,12 +8,21 @@ function MainContent() {
   const navigate = useNavigate();
   const [temperature, setTemperature] = useState(null);
 
+  const increaseTemp = () => {
+  setTemperature((prev) => (isNaN(prev) ? 0 : parseFloat(prev) + 1));
+};
+
+const decreaseTemp = () => {
+  setTemperature((prev) => (isNaN(prev) ? 0 : parseFloat(prev) - 1));
+};
+
+
   useEffect(() => {
     const fetchTemperature = async () => {
       try {
         const res = await axios.get("http://localhost:5000/api/smarttray");
         const temp = res.data?.temperature;
-        setTemperature(temp !== null && temp !== undefined ? temp : "N/A");
+        setTemperature(temp !== null && temp !== undefined ? temp : "0");
       } catch (error) {
         console.error("Error fetching temperature:", error);
         setTemperature("Error");
@@ -33,6 +42,11 @@ function MainContent() {
 
       <div className="tempbox">
         {temperature !== null ? `${temperature}°C` : "Loading..."}
+      </div>
+
+      <div className="controls">
+        <button className="decrease" onClick={decreaseTemp}>- Lower Temp</button>
+        <button className="increase" onClick={increaseTemp}>+ Raise Temp</button>
       </div>
 
       <div className="nextpage">
