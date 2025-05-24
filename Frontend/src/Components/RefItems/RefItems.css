@@ -1,5 +1,5 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
 .trayimage {
@@ -7,16 +7,50 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Add this */
+  position: relative;
 }
 
-
 .trayimage img {
-  padding: 0;
-  margin: 0;
-  border: 0;
   max-height: 75vh;
   max-width: 100%;
   height: auto;
   width: auto;
+  z-index: 1;
 }
+
+.items-container {
+  position: absolute;
+  top: 25%; /* adjust if needed */
+  left: 20%;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* ❗ clip anything outside */
+  z-index: 2;
+  pointer-events: none;
+  padding: 4px;
+  gap: 4px;
+}
+
+.tray-item {
+  flex: 0 1 calc(20% - 8px);  /* Up to 5 per row, scales down if more */
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.notification-bar {
+  background-color: #ffe0e0;
+  color: #b30000;
+  padding: 12px;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #ffaaaa;
+  border-radius: 8px;
+  width: fit-content;
+}
+
