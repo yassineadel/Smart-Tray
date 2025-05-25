@@ -22,7 +22,7 @@ const decreaseTemp = () => {
       try {
         const res = await axios.get("http://localhost:5000/api/smarttray");
         const temp = res.data?.temperature;
-        setTemperature(temp !== null && temp !== undefined ? temp : "0");
+        setTemperature(temp !== null && temp !== undefined ? temp : "N/A");
       } catch (error) {
         console.error("Error fetching temperature:", error);
         setTemperature("Error");
